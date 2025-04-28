@@ -1,76 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Name</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        header, section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .speaker, .schedule-item {
-            margin-bottom: 15px;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Name - Conference 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+    .speakers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .speaker-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .speaker-card:hover {
+      transform: translateY(-5px);
+    }
+    .speaker-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .speaker-card h3 {
+      margin: 15px 0 5px;
+      font-size: 1.3em;
+    }
+    .speaker-card p {
+      margin: 0 15px 20px;
+      font-size: 0.95em;
+      color: #666;
+    }
+    .schedule {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .day-schedule {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .day-schedule h3 {
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+    .day-schedule ul {
+      list-style: none;
+      padding: 0;
+    }
+    .day-schedule li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      background-color: #2c3e50;
+      color: white;
+    }
+    footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Conference Name</h1>
-    <p>Date: June 20-22, 2025</p>
-    <p>Location: Example City, Example Venue</p>
+  <h1>Workshop Title</h1>
+  <p>June 20–22, 2025</p>
+  <p>Example City · Example Venue</p>
 </header>
 
 <section>
-    <h2>Speakers</h2>
-    <div class="speaker">
-        <h3>Dr. Jane Doe</h3>
-        <p>Topic: Future of Neuromorphic Computing</p>
+  <h2>Speakers</h2>
+  <div class="speakers">
+    <div class="speaker-card">
+      <img src="https://via.placeholder.com/300x300.png?text=Jane+Doe" alt="Dr. Jane Doe">
+      <h3>Dr. Jane Doe</h3>
+      <p>Future of Neuromorphic Computing</p>
     </div>
-    <div class="speaker">
-        <h3>Prof. John Smith</h3>
-        <p>Topic: AI and Robotics for Smart Cities</p>
+    <div class="speaker-card">
+      <img src="https://via.placeholder.com/300x300.png?text=John+Smith" alt="Prof. John Smith">
+      <h3>Prof. John Smith</h3>
+      <p>AI and Robotics for Smart Cities</p>
     </div>
-    <!-- Add more speakers here -->
+    <!-- Add more speakers -->
+  </div>
 </section>
 
 <section>
-    <h2>Schedule</h2>
-    <div class="schedule-item">
-        <h3>Day 1 - June 20, 2025</h3>
-        <ul>
-            <li>09:00 - Opening Remarks</li>
-            <li>09:30 - Keynote: Dr. Jane Doe</li>
-            <li>11:00 - Coffee Break</li>
-            <li>11:30 - Session 1: Neuromorphic Advances</li>
-        </ul>
+  <h2>Schedule</h2>
+  <div class="schedule">
+    <div class="day-schedule">
+      <h3>Day 1 — June 20, 2025</h3>
+      <ul>
+        <li>09:00 — Opening Remarks</li>
+        <li>09:30 — Keynote: Dr. Jane Doe</li>
+        <li>11:00 — Coffee Break</li>
+        <li>11:30 — Session 1: Neuromorphic Advances</li>
+      </ul>
     </div>
-    <div class="schedule-item">
-        <h3>Day 2 - June 21, 2025</h3>
-        <ul>
-            <li>09:00 - Workshop on Robotics</li>
-            <li>12:00 - Lunch Break</li>
-            <li>14:00 - Panel Discussion: Future Trends</li>
-        </ul>
+    <div class="day-schedule">
+      <h3>Day 2 — June 21, 2025</h3>
+      <ul>
+        <li>09:00 — Workshop on Robotics</li>
+        <li>12:00 — Lunch Break</li>
+        <li>14:00 — Panel Discussion: Future Trends</li>
+      </ul>
     </div>
-    <!-- Add more schedule items here -->
+    <!-- Add more days if needed -->
+  </div>
 </section>
 
 <footer>
-    <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+  <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
 </footer>
 
 </body>
