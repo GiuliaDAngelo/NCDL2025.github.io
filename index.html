@@ -15,8 +15,18 @@
     header {
       background: linear-gradient(90deg, #000000, #222222);
       color: white;
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header .logo {
+      width: 150px; /* Adjust the size of the logo */
+      height: auto;
+      margin-bottom: 1rem; /* Add spacing between the logo and the text */
     }
     header h1 {
       margin: 0;
@@ -48,7 +58,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      width: 250px;
+      width: 200px;
       text-align: center;
       transition: transform 0.3s;
     }
@@ -82,12 +92,17 @@
     }
     .schedule-table th, .schedule-table td {
       border: 1px solid #ddd;
-      padding: 0.75rem;
+      padding: .75rem;
       text-align: left;
+      font-size: 1.2rem;
     }
     .schedule-table th {
       background: #222222;
       color: white;
+    }
+    .schedule-table th:first-child,
+    .schedule-table td:first-child {
+      width: 150px; /* Adjust this value to set the desired column width */
     }
     .highlight {
       color: #222222;
@@ -113,7 +128,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      width: 220px;
+      width: 125px;
       text-align: center;
       padding: 1rem;
       transition: transform 0.3s;
@@ -135,47 +150,49 @@
 
 <header>
   <h1>Neuromorphic Computing for Development and Learning Workshop (NCDL)</h1>
-  <p>Full-Day Workshop - International Conference on Development and Learning (ICDL)</p>
+  <p>International Conference on Development and Learning (ICDL)</p>
+  <img src="images/blacklogo.png" alt="Workshop Logo" class="logo">
+  <p>Full-Day Workshop, 16 September 2025 </p>
 </header>
 
-  <section>
+  <section style="text-align: center;">
   <h2>Organizers</h2>
   <div class="organizers">
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Giulia+D'Angelo" alt="Giulia D'Angelo">
+      <img src="images/giulia.jpg" alt="Giulia D'Angelo">
       <h3>Dr. Giulia D'Angelo</h3>
       <p>Czech Technical University in Prague</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Alexander+Hadjiivanov" alt="Alexander Hadjiivanov">
-      <h3>Alexander Hadjiivanov</h3>
+      <img src="images/alex.png" alt="Alexander Hadjiivanov">
+      <h3>Dr. Alexander Hadjiivanov</h3>
       <p>Adapsent, Leiden, Netherlands</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Matthias+Kampa" alt="Matthias Kampa">
+      <img src="images/matthi.jpeg" alt="Matthias Kampa">
       <h3>Matthias Kampa</h3>
       <p>Zurich University of Applied Sciences</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=James+Knight" alt="James Knight">
-      <h3>James Knight</h3>
+      <img src="images/jamie.jpeg" alt="James Knight">
+      <h3>Dr. James Knight</h3>
       <p>University of Sussex</p>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Yulia+Sandamirskaya" alt="Yulia Sandamirskaya">
-      <h3>Yulia Sandamirskaya</h3>
+      <img src="images/yulia.jpeg" alt="Yulia Sandamirskaya">
+      <h3>Prof. Yulia Sandamirskaya</h3>
       <p>Zurich University of Applied Sciences</p>
     </div>
   </div>
 </section>
 
   
-<section>
+<section style="text-align: center;">
   <h2>About the Workshop</h2>
   <p>The Neuromorphic Computing for Development and Learning Workshop (NCDL) is a full-day event focused on advancements in neuromorphic computing and developmental learning. It brings together experts, researchers, and industry professionals to explore neuromorphic sensing, spiking neural networks (SNNs), event-driven computing, and embodied learning systems. Keynote talks and hands-on sessions will cover sensorimotor learning, adaptive perception, real-time decision-making, and neuromorphic architectures.</p>
 </section>
 
-<section>
+<section style="text-align: center;">
   <h2>Speakers</h2>
   <div class="card-container">
     <div class="card">
@@ -193,7 +210,7 @@
       </div>
     </div>
     <div class="card">
-      <img src="images/chiaradeluca.jpeg.jpeg" alt="Dr. Chiara De Luca">
+      <img src="images/chiaradeluca.jpeg" alt="Dr. Chiara De Luca">
       <div class="card-content">
         <h3>Dr. Chiara De Luca</h3>
         <p>Senior Researcher at Digital Society Initiative, Zurich, Switzerland.</p>
@@ -216,7 +233,7 @@
   </div>
 </section>
 
-<section>
+<section style="text-align: center;">
   <h2>Schedule</h2>
   <table class="schedule-table">
     <tr>
@@ -280,6 +297,13 @@
       <td>Wrap-up and Closing Remarks</td>
     </tr>
   </table>
+</section>
+
+<section style="text-align: center;">
+  <h2>Location</h2>
+  <p>The workshop will take place at the <strong>Faculty of Electrical Engineering CVUT in Prague</strong></p>
+  <p>Technicka 1902/2, Prague 6 - Dejvice, Prague, Czech Republic</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.0956099600294!2d14.38988772628468!3d50.10321736230491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b953b18badba7%3A0x9118eef71aaa98!2zxIxlc2vDqSB2eXNva8OpIHXEjWVuw60gdGVjaG5pY2vDqSB2IFByYXplLCBUZWNobmlja8OhIDE5MDIvMiwgMTY2IDI3IFByYWhhIDYgLSBEZWp2aWNlLVByYWhhIDY!5e0!3m2!1sen!2scz!4v1745863471361!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <footer>
