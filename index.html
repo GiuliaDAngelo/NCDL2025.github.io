@@ -100,6 +100,35 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+    .organizers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .organizers .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 220px;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+    
+    .organizers .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .organizers img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+        
   </style>
 </head>
 <body>
@@ -140,6 +169,7 @@
   </div>
 </section>
 
+  
 <section>
   <h2>About the Workshop</h2>
   <p>The Neuromorphic Computing for Development and Learning Workshop (NCDL) is a full-day event focused on advancements in neuromorphic computing and developmental learning. It brings together experts, researchers, and industry professionals to explore neuromorphic sensing, spiking neural networks (SNNs), event-driven computing, and embodied learning systems. Keynote talks and hands-on sessions will cover sensorimotor learning, adaptive perception, real-time decision-making, and neuromorphic architectures.</p>
