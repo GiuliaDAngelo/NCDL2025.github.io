@@ -6,15 +6,14 @@
   <title>Neuromorphic Computing for Development and Learning Workshop (NCDL)</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: #f9f9f9;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      background: linear-gradient(90deg, #000000, #222222);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
@@ -23,69 +22,83 @@
       margin: 0;
       font-size: 2.5rem;
     }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
     section {
-      max-width: 1000px;
-      margin: 2rem auto;
       padding: 2rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 1200px;
+      margin: auto;
     }
     section h2 {
-      color: #0d47a1;
-      border-bottom: 2px solid #1976d2;
+      color: #000000;
+      border-bottom: 2px solid #222222;
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
     }
-    .organizers, .speakers, .partners {
+    .card-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 2rem;
       justify-content: center;
-      margin-top: 1rem;
     }
     .card {
-      background: #f0f4f8;
-      border-radius: 8px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       overflow: hidden;
+      width: 250px;
       text-align: center;
-      width: 200px;
-      padding: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      transition: transform 0.3s;
     }
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
     }
     .card img {
-      width: 100%;
+      width: 150px;
       height: 150px;
+      border-radius: 50%;
       object-fit: cover;
-      border-bottom: 2px solid #1976d2;
+      margin-top: 20px;
+      border: 2px solid #222222;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 10px;
+      color: #000000;
+      font-size: 1.1rem;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
     }
     .schedule-table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
     .schedule-table th, .schedule-table td {
-      border: 1px solid #ccc;
+      border: 1px solid #ddd;
       padding: 0.75rem;
       text-align: left;
     }
     .schedule-table th {
-      background: #1976d2;
+      background: #222222;
       color: white;
     }
+    .highlight {
+      color: #222222;
+      font-weight: bold;
+    }
     footer {
+      background: #000000;
+      color: white;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .highlight {
-      color: #1976d2;
-      font-weight: bold;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -93,154 +106,123 @@
 
 <header>
   <h1>Neuromorphic Computing for Development and Learning Workshop (NCDL)</h1>
-  <p><em>at ICDL 2025</em></p>
+  <p>Full-Day Workshop - International Conference on Development and Learning (ICDL)</p>
 </header>
 
 <section>
-  <h2>Organizers</h2>
-  <div class="organizers">
+  <h2>About the Workshop</h2>
+  <p>The Neuromorphic Computing for Development and Learning Workshop (NCDL) is a full-day event focused on advancements in neuromorphic computing and developmental learning. It brings together experts, researchers, and industry professionals to explore neuromorphic sensing, spiking neural networks (SNNs), event-driven computing, and embodied learning systems. Keynote talks and hands-on sessions will cover sensorimotor learning, adaptive perception, real-time decision-making, and neuromorphic architectures.</p>
+</section>
+
+<section>
+  <h2>Speakers</h2>
+  <div class="card-container">
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Giulia+D'Angelo" alt="Giulia D'Angelo">
-      <h3>Dr. Giulia D'Angelo</h3>
-      <p>Czech Technical University in Prague</p>
+      <img src="https://via.placeholder.com/150x150?text=Dr.+Arren+Glover" alt="Dr. Arren Glover">
+      <div class="card-content">
+        <h3>Dr. Arren Glover</h3>
+        <p>Technologist at IIT, Italy. Expert in Event-Driven Perception.</p>
+      </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Alexander+Hadjiivanov" alt="Alexander Hadjiivanov">
-      <h3>Alexander Hadjiivanov</h3>
-      <p>Adapsent, Leiden, Netherlands</p>
+      <img src="https://via.placeholder.com/150x150?text=Prof.+Thomas+Nowotny" alt="Prof. Thomas Nowotny">
+      <div class="card-content">
+        <h3>Prof. Thomas Nowotny</h3>
+        <p>Professor of Informatics at University of Sussex, UK. Expert in SNN Training.</p>
+      </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Matthias+Kampa" alt="Matthias Kampa">
-      <h3>Matthias Kampa</h3>
-      <p>Zurich University of Applied Sciences</p>
+      <img src="https://via.placeholder.com/150x150?text=Dr.+Chiara+De+Luca" alt="Dr. Chiara De Luca">
+      <div class="card-content">
+        <h3>Dr. Chiara De Luca</h3>
+        <p>Senior Researcher at Digital Society Initiative, Zurich, Switzerland.</p>
+      </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=James+Knight" alt="James Knight">
-      <h3>James Knight</h3>
-      <p>University of Sussex</p>
+      <img src="https://via.placeholder.com/150x150?text=Dr.+Arthur+Aubret" alt="Dr. Arthur Aubret">
+      <div class="card-content">
+        <h3>Dr. Arthur Aubret</h3>
+        <p>Senior Researcher at Frankfurt Institute for Advanced Studies, Germany.</p>
+      </div>
     </div>
     <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Yulia+Sandamirskaya" alt="Yulia Sandamirskaya">
-      <h3>Yulia Sandamirskaya</h3>
-      <p>Zurich University of Applied Sciences</p>
+      <img src="https://via.placeholder.com/150x150?text=Prof.+Luca+Peres" alt="Prof. Luca Peres">
+      <div class="card-content">
+        <h3>Prof. Luca Peres</h3>
+        <p>Lecturer specialized in neuromorphic computing at University of Manchester, UK.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Workshop Overview</h2>
-  <p>The <strong>Neuromorphic Computing for Development and Learning Workshop (NCDL)</strong> is a <span class="highlight">full-day event</span> dedicated to exploring the latest advancements in neuromorphic sensing, spiking neural networks, developmental learning, and embodied intelligence.</p>
-  
-  <ul>
-    <li>Keynote talks from leading researchers</li>
-    <li>Hands-on tutorials on neuromorphic techniques</li>
-    <li>Poster session and industrial showcases</li>
-    <li>Networking and live streaming</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Keynote Speakers</h2>
-  <div class="speakers">
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Arren+Glover" alt="Arren Glover">
-      <h3>Dr. Arren Glover</h3>
-      <p>IIT, Italy</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Thomas+Nowotny" alt="Thomas Nowotny">
-      <h3>Prof. Thomas Nowotny</h3>
-      <p>University of Sussex, UK</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Chiara+De+Luca" alt="Chiara De Luca">
-      <h3>Dr. Chiara De Luca</h3>
-      <p>University of Zurich, Switzerland</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Arthur+Aubret" alt="Arthur Aubret">
-      <h3>Dr. Arthur Aubret</h3>
-      <p>Frankfurt Institute for Advanced Studies</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=Luca+Peres" alt="Luca Peres">
-      <h3>Prof. Luca Peres</h3>
-      <p>University of Manchester, UK</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Industrial Partners</h2>
-  <div class="partners">
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=NEURA+Robotics" alt="NEURA Robotics">
-      <h3>NEURA Robotics</h3>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/200x150?text=SynSense" alt="SynSense">
-      <h3>SynSense</h3>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Workshop Schedule</h2>
+  <h2>Schedule</h2>
   <table class="schedule-table">
-    <thead>
-      <tr>
-        <th>Time</th>
-        <th>Event</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>09:00 - 09:30</td>
-        <td>Keynote: Dr. Arren Glover – Event-Driven Perception</td>
-      </tr>
-      <tr>
-        <td>09:30 - 10:00</td>
-        <td>Keynote: Prof. Thomas Nowotny – Efficient Training of SNNs</td>
-      </tr>
-      <tr>
-        <td>10:00 - 10:30</td>
-        <td>Keynote: Dr. Chiara De Luca – Brain-Inspired Computational Primitives</td>
-      </tr>
-      <tr>
-        <td>10:30 - 11:30</td>
-        <td>Coffee Break + Poster Session</td>
-      </tr>
-      <tr>
-        <td>11:30 - 12:00</td>
-        <td>Keynote: Dr. Arthur Aubret – Contrastive Learning Through Time</td>
-      </tr>
-      <tr>
-        <td>12:00 - 12:30</td>
-        <td>Keynote: Prof. Luca Peres – Neuromorphic Architectures</td>
-      </tr>
-    </tbody>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+    </tr>
+    <tr>
+      <td>09:00-09:30</td>
+      <td>Keynote: Dr. Arren Glover (confirmed - in person) - Event-Driven Perception + Q/A</td>
+    </tr>
+    <tr>
+      <td>09:30-10:00</td>
+      <td>Keynote: Prof. Thomas Nowotny (confirmed - in person) - How to efficiently train Spiking Neural Networks on machine learning tasks + Q/A</td>
+    </tr>
+    <tr>
+      <td>10:00-10:30</td>
+      <td>Keynote: Dr. Chiara De Luca (confirmed - in person) - Brain-inspired computational primitives towards a reliable and efficient neuromorphic intelligence + Q/A</td>
+    </tr>
+    <tr>
+      <td>10:30-11:30</td>
+      <td>Coffee Break + Poster Session</td>
+    </tr>
+    <tr>
+      <td>11:30-12:00</td>
+      <td>Keynote: Dr. Arthur Aubret (confirmed - online) - Contrastive Learning Through Time for object perception + Q/A</td>
+    </tr>
+    <tr>
+      <td>12:00-12:30</td>
+      <td>Keynote: Prof. Luca Peres (confirmed - in person) - Neuromorphic Architectures HW/SW + Q/A</td>
+    </tr>
+    <tr>
+      <td>12:30-12:45</td>
+      <td>Short Break</td>
+    </tr>
+    <tr>
+      <td>12:45-13:30</td>
+      <td>Panel Discussion or Debate: Interdisciplinary Approaches to Neuromorphic Systems</td>
+    </tr>
+    <tr>
+      <td>14:30-15:00</td>
+      <td>Keynote: NEURA Robotics - Robotic Applications of Neuromorphic Systems + Q/A</td>
+    </tr>
+    <tr>
+      <td>15:00-15:30</td>
+      <td>Keynote: SynSense - Neuromorphic Sensing and Perception + Q/A</td>
+    </tr>
+    <tr>
+      <td>15:30-16:30</td>
+      <td>Coffee Break + Poster Session</td>
+    </tr>
+    <tr>
+      <td>16:30-17:00</td>
+      <td>Tutorial 1: Selective Attention in Neuromorphic Systems - Giulia D'Angelo (confirmed - in person)</td>
+    </tr>
+    <tr>
+      <td>17:00-17:30</td>
+      <td>Tutorial 2: Pyrception: A Neuromorphic Approach to Perception - Alexander Hadjiivanov (confirmed - in person)</td>
+    </tr>
+    <tr>
+      <td>17:30-18:00</td>
+      <td>Wrap-up and Closing Remarks</td>
+    </tr>
   </table>
 </section>
 
-<section>
-  <h2>Call for Papers and Posters</h2>
-  <p>We are accepting submissions aligned with neuromorphic computing, developmental learning, and related areas. Accepted papers will be presented during the workshop and made available online. <strong>Submit your contribution and join us!</strong></p>
-</section>
-
-<section>
-  <h2>Dissemination Strategy</h2>
-  <p>Our dissemination strategy includes:</p>
-  <ul>
-    <li>Announcements via mailing lists (Capocaccia & Neuromorphs)</li>
-    <li>Professional networks: LinkedIn, Bluesky</li>
-    <li>Brains&Machines Podcast</li>
-    <li>Open Neuromorphic Community (LinkedIn, Discord)</li>
-    <li>Streaming and publishing of talks and slides online</li>
-  </ul>
-</section>
-
 <footer>
-  Contact: <a href="mailto:giulia.dangelo@fel.cvut.cz">giulia.dangelo@fel.cvut.cz</a> | NCDL 2025
+  <p>© 2025 Neuromorphic Computing for Development and Learning Workshop | Organized by Giulia D'Angelo and team</p>
 </footer>
 
 </body>
