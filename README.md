@@ -4,7 +4,11 @@
 📅 **Full-Day Workshop, 16 September 2025**  
 📍 **Faculty of Electrical Engineering CVUT, Prague, Czech Republic**
 
-![Workshop Logo](images/blacklogo.png)
+🌐 [**Visit the official website**](https://giuliadangelo.github.io/NCDL2025.github.io/)
+
+
+
+<img src="images/blacklogo.png" alt="Workshop Logo" width="240"/>
 
 ---
 
