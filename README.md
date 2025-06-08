@@ -12,6 +12,8 @@
 
 ---
 
+## Submission Deadline: **10 July 2025**
+[Submission procedure here](#-submit-a-new-contribution-to-the-ncdl-2025-community-on-zenodo)
 <p align="center"><img src="images/CallForContributions.png" alt="Workshop Logo" width="340"/></p>
 
 ---
@@ -108,6 +110,46 @@ Technická 1902/2, Prague 6 - Dejvice, Czech Republic
 [📍 Google Maps Location](https://www.google.com/maps/place/Technick%C3%A1+1902%2F2,+Prague)
 
 ---
+
+## 📤 Submit a New Contribution to the NCDL 2025 Community on Zenodo
+
+You can contribute your work to the **NCDL 2025** community by following the steps below. Your submission will be reviewed by the community curators before publication.
+
+### ■ Step 1: Log In to Zenodo
+- Go to [https://zenodo.org](https://zenodo.org)
+- Click **“Sign in”** in the upper-right corner.
+- Log in using ORCID, GitHub, or your email.
+
+### ■ Step 2: Upload Your Files
+- Go to the NCDL 2025 Zenodo Community:  
+  [https://zenodo.org/communities/ncdl-2025/records](https://zenodo.org/communities/ncdl-2025/records)
+- Click on **“New upload”** (top right).
+- Drag and drop your file(s): a 1-page PDF including **Abstract**, **Methods**, and **Preliminary Results**.
+
+### ■ Step 3: Complete Basic Information
+- **Digital Object Identifier (DOI)**: Select “No, I need one.”
+- **Resource Type**: Publication
+- **Title**: Enter the title of your proposed contribution.
+- **Creators**: Add the name of the corresponding author (with affiliation and ORCID, if available).
+- **Description**: Paste the abstract text.
+
+### ■ Step 4: Submit for Review
+- Click **“Submit for review”** (top right).
+- Grant access for community curators to review your submission.
+- Optionally, include a message to the curators.
+
+### ■ Step 5: Await Approval
+- You will receive email updates about your submission status.
+- If accepted, your record will appear in the community listing.
+
+---
+
+### 🔗 View the Community
+
+Visit the official NCDL 2025 community page:  
+[https://zenodo.org/communities/ncdl-2025/records?q=&l=list&p=1&s=10&sort=newest](https://zenodo.org/communities/ncdl-2025/records?q=&l=list&p=1&s=10&sort=newest)
+
+
 
 ## ©️ Footer
 
