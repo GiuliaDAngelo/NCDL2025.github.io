@@ -12,6 +12,10 @@
 
 ---
 
+<p align="center"><img src="images/CallForContributions.png" alt="Workshop Logo" width="340"/></p>
+
+---
+
 ## 🧑‍🔬 Organizers
 
 - **Dr. Giulia D'Angelo** – Czech Technical University in Prague  
