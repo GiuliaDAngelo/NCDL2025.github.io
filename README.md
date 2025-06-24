@@ -80,7 +80,8 @@ with applications in **robotics, perception, attention**, and **decision-making*
 | 12:30–12:45   | Short Break                                                         |
 | 12:45–13:30   | Panel: Interdisciplinary Approaches to Neuromorphic Systems         |
 | 14:30–15:00   | Keynote: Katarzyna (Kasia) Kożdoń - Innatera                                                           |
-| 15:00–15:30   | Keynote: ?                                                          |
+
+[//]: # (| 15:00–15:30   | Keynote: ?                                                          |)
 | 15:30–16:30   | Coffee Break + Poster Session                                       |
 | 16:30–17:00   | Tutorial 1: Selective Attention – Giulia D'Angelo                   |
 | 17:00–17:30   | Tutorial 2: Pyrception – Alexander Hadjiivanov                      |
