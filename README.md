@@ -69,17 +69,18 @@ with applications in **robotics, perception, attention**, and **decision-making*
 
 ## 🗓️ Tentative Schedule
 
-| Time          | Session                                                             |
-|---------------|---------------------------------------------------------------------|
-| 09:00–09:30   | Keynote: Dr. Arren Glover – Event-Driven Perception + Q&A           |
-| 09:30–10:00   | Keynote: Prof. Thomas Nowotny – Efficient SNN Training + Q&A        |
-| 10:00–10:30   | Keynote: Dr. Chiara De Luca – Computational Primitives + Q&A        |
-| 10:30–11:30   | Coffee Break + Poster Session                                       |
-| 11:30–12:00   | Keynote: Dr. Arthur Aubret – Contrastive Learning Through Time + Q&A |
-| 12:00–12:30   | Keynote: Prof. Luca Peres – Neuromorphic Architectures + Q&A        |
-| 12:30–12:45   | Short Break                                                         |
-| 12:45–13:30   | Panel: Interdisciplinary Approaches to Neuromorphic Systems         |
-| 14:30–15:00   | Keynote: Katarzyna (Kasia) Kożdoń - Innatera                                                           |
+| Time        | Session                                                             |
+|-------------|---------------------------------------------------------------------|
+| 09:00–09:30 | Keynote: Dr. Arren Glover – Event-Driven Perception + Q&A           |
+| 09:30–10:00 | Keynote: Prof. Thomas Nowotny – Efficient SNN Training + Q&A        |
+| 10:00–10:30 | Keynote: Dr. Chiara De Luca – Computational Primitives + Q&A        |
+| 10:30–11:00 | Coffee Break + Poster Session                                       |
+| 11:00–11:30 | Keynote: Dr. Arthur Aubret – Contrastive Learning Through Time + Q&A |
+| 11:30–12:00 | Keynote: Prof. Luca Peres – Neuromorphic Architectures + Q&A        |
+| 12:00–12:30 | Keynote: Prof. Srikanth Ramaswamy – Interface of biological and artificial neural networks + Q/A  |
+| 12:30–12:45 | Short Break                                                         |
+| 12:45–13:30 | Panel: Interdisciplinary Approaches to Neuromorphic Systems         |
+| 14:30–15:00 | Keynote: Katarzyna (Kasia) Kożdoń - Innatera                                                           |
 
 [//]: # (| 15:00–15:30   | Keynote: ?                                                          |)
 | 15:30–16:30   | Coffee Break + Poster Session                                       |
