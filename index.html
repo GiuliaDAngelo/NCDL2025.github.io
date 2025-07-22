@@ -639,6 +639,25 @@
 </footer>
 
 <script>
+// Function to escape HTML content
+function escapeHtml(text) {
+  const map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+
+// Function to strip HTML tags and keep only text
+function stripHtml(html) {
+  const tmp = document.createElement("DIV");
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || "";
+}
+
 // Function to fetch and display Zenodo abstracts
 async function loadZenodoAbstracts() {
   try {
@@ -672,15 +691,23 @@ async function loadZenodoAbstracts() {
       const description = metadata.description || 'No description available';
       const doi = abstract.doi_url || abstract.links.html;
 
+      // Strip HTML tags and escape any remaining HTML characters
+      const cleanDescription = stripHtml(description);
+
       // Truncate description if too long
-      const shortDescription = description.length > 300 ?
-        description.substring(0, 300) + '...' : description;
+      const shortDescription = cleanDescription.length > 300 ?
+        cleanDescription.substring(0, 300) + '...' : cleanDescription;
+
+      // Escape HTML to prevent injection
+      const safeTitle = escapeHtml(title);
+      const safeAuthors = escapeHtml(authors);
+      const safeDescription = escapeHtml(shortDescription);
 
       abstractsHTML += `
         <div class="abstract-card">
-          <div class="abstract-title">${title}</div>
-          <div class="abstract-authors">👥 ${authors}</div>
-          <div class="abstract-description">${shortDescription}</div>
+          <div class="abstract-title">${safeTitle}</div>
+          <div class="abstract-authors">👥 ${safeAuthors}</div>
+          <div class="abstract-description">${safeDescription}</div>
           <a href="${doi}" target="_blank" class="abstract-link">📄 View Full Abstract</a>
         </div>
       `;
