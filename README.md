@@ -84,7 +84,7 @@ Traditional AI struggles with real-time adaptability, continual learning, and en
 | 11:00–11:30 | Keynote: Dr. Arthur Aubret (confirmed - in person) - Contrastive Learning Through Time for object perception + Q&A |
 | 11:30–12:00 | Keynote: Dr. Luca Peres (confirmed - in person) - Neuromorphic Architectures HW/SW + Q&A |
 | 12:00–12:30 | Keynote: Prof. Srikanth Ramaswamy (confirmed - in person) - Interface of biological and artificial neural networks + Q&A |
-| 12:30–12:45 | Short Break                                                         |
+| 12:30–14:00 | Lunch                                                         |
 | 14:00–14:30 | Panel Discussion or Debate: Interdisciplinary Approaches to Neuromorphic Systems |
 | 14:30–15:00 | Keynote: Katarzyna (Kasia) Kożdoń - Innatera                        |
 | 15:00–15:30 | Keynote: Thomas Ortner - IBM Zurich                                 |
