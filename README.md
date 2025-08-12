@@ -74,24 +74,24 @@ Traditional AI struggles with real-time adaptability, continual learning, and en
 
 ## 🗓️ Workshop Schedule
 
-| Time        | Session                                                                                                                                                        |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 08:50–09:00 | Dr. Giulia D'Angelo - Welcome and intro to the workshop                                                                                                        |
-| 09:00–09:30 | Keynote: Dr. Arren Glover (confirmed - in person) - Robot Perception with Bio-inspired Event Cameras + Q&A                                                     |
-| 09:30–10:00 | Keynote: Prof. Thomas Nowotny (confirmed - in person) - How to efficiently train Spiking Neural Networks on machine learning tasks + Q&A                       |
-| 10:00–10:30 | Keynote: Dr. Chiara De Luca (confirmed - in person) - Brain-inspired computational primitives towards a reliable and efficient neuromorphic intelligence + Q&A |
-| 10:30–11:00 | Coffee Break + Intro Poster Session                                                                                                                            |
-| 11:00–11:30 | Keynote: Dr. Arthur Aubret (confirmed - in person) - Bio-inspired Self-Supervised Learning of Visual Object Representations + Q&A                              |
-| 11:30–12:00 | Keynote: Dr. Luca Peres (confirmed - in person) - Neuromorphic Architectures HW/SW + Q&A                                                                       |
-| 12:00–12:30 | Keynote: Prof. Srikanth Ramaswamy (confirmed - in person) - Interface of biological and artificial neural networks + Q&A                                       |
-| 12:30–14:00 | Lunch                                                                                                                                                          |
-| 14:00–14:30 | Panel Discussion or Debate: Interdisciplinary Approaches to Neuromorphic Systems                                                                               |
-| 14:30–15:00 | Keynote: Katarzyna (Kasia) Kożdoń - Innatera - The Reality Gap: From Brain-Inspired Learning to Deployable Neuromorphic System    + Q&A                        |
-| 15:00–15:30 | Keynote: Thomas Ortner - IBM Zurich - Neuro-inspired computing: Merging neuroscience and AI  + Q&A                                                             |
-| 15:30–16:30 | Coffee Break + Poster Session                                                                                                                                  |
-| 16:30–17:00 | Tutorial 1: Selective Attention in Neuromorphic Systems - Giulia D'Angelo (confirmed - in person)                                                              |
-| 17:00–17:30 | Tutorial 2: Pyrception: A Neuromorphic Approach to Perception - Alexander Hadjiivanov (confirmed - in person)                                                  |
-| 17:30–18:00 | Dr. Giulia D'Angelo - Wrap-up and Closing Remarks                                                                                                              |
+| Time        | Session                                                                                                                                  |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| 08:50–09:00 | Dr. Giulia D'Angelo - Welcome and intro to the workshop                                                                                  |
+| 09:00–09:30 | Keynote: Dr. Arren Glover (confirmed - in person) - Robot Perception with Bio-inspired Event Cameras + Q&A                               |
+| 09:30–10:00 | Keynote: Prof. Thomas Nowotny (confirmed - in person) - How to efficiently train Spiking Neural Networks on machine learning tasks + Q&A |
+| 10:00–10:30 | Keynote: Dr. Chiara De Luca (confirmed - in person) - Learning on the edge: local and online neuromorphic intelligence + Q&A                                                                            |
+| 10:30–11:00 | Coffee Break + Intro Poster Session                                                                                                      |
+| 11:00–11:30 | Keynote: Dr. Arthur Aubret (confirmed - in person) - Bio-inspired Self-Supervised Learning of Visual Object Representations + Q&A        |
+| 11:30–12:00 | Keynote: Dr. Luca Peres (confirmed - in person) - Neuromorphic Architectures HW/SW + Q&A                                                 |
+| 12:00–12:30 | Keynote: Prof. Srikanth Ramaswamy (confirmed - in person) - Interface of biological and artificial neural networks + Q&A                 |
+| 12:30–14:00 | Lunch                                                                                                                                    |
+| 14:00–14:30 | Panel Discussion or Debate: Interdisciplinary Approaches to Neuromorphic Systems                                                         |
+| 14:30–15:00 | Keynote: Katarzyna (Kasia) Kożdoń - Innatera - The Reality Gap: From Brain-Inspired Learning to Deployable Neuromorphic System    + Q&A  |
+| 15:00–15:30 | Keynote: Thomas Ortner - IBM Zurich - Neuro-inspired computing: Merging neuroscience and AI  + Q&A                                       |
+| 15:30–16:30 | Coffee Break + Poster Session                                                                                                            |
+| 16:30–17:00 | Tutorial 1: Selective Attention in Neuromorphic Systems - Giulia D'Angelo (confirmed - in person)                                        |
+| 17:00–17:30 | Tutorial 2: Pyrception: A Neuromorphic Approach to Perception - Alexander Hadjiivanov (confirmed - in person)                            |
+| 17:30–18:00 | Dr. Giulia D'Angelo - Wrap-up and Closing Remarks                                                                                        |
 
 ---
 
