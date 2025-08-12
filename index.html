@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -326,6 +327,172 @@
       background: #5a6fd8;
     }
 
+    .speaker-card {
+      /* CHANGED FROM: overflow: hidden; */
+      overflow: visible; /* Allow tooltips to overflow */
+    }
+
+    .speaker-card::before {
+      /* ADDED: */
+      border-radius: 20px 20px 0 0;
+    }
+
+  .bio-tooltip {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 320px;
+    max-width: 90vw;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+    /* REMOVED: pointer-events: none; */
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .bio-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(255, 255, 255, 0.98);
+  }
+
+  .speaker-card:hover .bio-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+    pointer-events: auto; /* Enable scrolling and interaction */
+  }
+
+  .bio-tooltip:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .bio-tooltip h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.3rem;
+  }
+
+  .bio-tooltip .bio-text {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .bio-tooltip .bio-highlights {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: linear-gradient(145deg, #f8f9ff, #e8f0ff);
+    border-radius: 10px;
+    border-left: 3px solid #667eea;
+  }
+
+  .bio-tooltip .bio-highlights ul {
+    margin: 0;
+    padding-left: 1rem;
+    list-style: none;
+  }
+
+  .bio-tooltip .bio-highlights li {
+    color: #333;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+  }
+
+  .bio-tooltip .bio-highlights li::before {
+    content: '→';
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: -1rem;
+  }
+
+  .hover-hint {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .speaker-card:hover .hover-hint {
+    opacity: 0;
+  }
+  /* Inside @media (max-width: 768px) */
+  .bio-tooltip {
+    width: 280px;
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+  .speaker-card.bottom-row .bio-tooltip {
+    top: auto;
+    bottom: -20px; /* Show below the card instead */
+  }
+
+  /* NEW: Arrow pointing up (for tooltips below card) */
+  .speaker-card.bottom-row .bio-tooltip::before {
+    top: -10px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.98);
+  }
+
+  .speaker-card:hover {
+    transform: translateY(-10px) scale(1.01);
+  }
+
+  .speaker-card:hover .bio-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+  }
+
+  .speaker-card.bottom-row:hover .bio-tooltip {
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  /* NEW: Extra small screens */
+  @media (max-width: 480px) {
+    .bio-tooltip {
+      width: 250px;
+      left: 10px;
+      transform: none;
+    }
+
+    .bio-tooltip::before {
+      left: 50%;
+    }
+  }
+
     /* Responsive design */
     @media (max-width: 768px) {
       header {
@@ -419,63 +586,133 @@
   <section style="text-align: center;">
     <h2>Keynote Speakers</h2>
     <div class="card-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; justify-content: center; margin-top: 2rem;">
+
+      <!--      Arren-->
       <div class="speaker-card">
-        <img src="images/arren%20glover.jpeg" alt="Dr. Arren Glover">
-        <div class="card-content">
-          <h3>Dr. Arren Glover</h3>
-          <p>Technologist at IIT, Italy. Expert in Event-Driven Perception.</p>
+      <div class="bio-tooltip">
+        <h4>Dr. Arren Glover</h4>
+        <div class="bio-text">
+          Arren Glover is a Technologist in the Event Driven Perception for Robotics research line (www.edpr.iit.it) at the Italian Institute of Technology. He obtained a Bachelors in Mechatronic Engineering (Honours) from the University of Queensland, Australia, and a Ph.D. in developmental robotics and on-line learning from the Queensland University of Technology, Australia. His interest is in real-time and online robotics with neuromorphic vision, exploiting neuromorphic technologies in robotics, space, and healthcare. He has worked on 6-DoF object pose tracking, human pose estimation, eye-tracking, optical flow, depth estimation, and reinforcement learning.
         </div>
       </div>
-      <div class="speaker-card">
-        <img src="images/tomas.jpeg" alt="Prof. Thomas Nowotny">
-        <div class="card-content">
-          <h3>Prof. Thomas Nowotny</h3>
-          <p>Professor of Informatics at University of Sussex, UK. Expert in SNN Training.</p>
+
+      <img src="images/arren glover.jpeg" alt="Dr. Arren Glover">
+      <div class="card-content">
+        <h3>Dr. Arren Glover</h3>
+        <p>Technologist at IIT, Italy. Expert in Event-Driven Perception.</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+      </div>
+      <!--      Arren-->
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Prof. Thomas Nowotny</h4>
+        <div class="bio-text">
+          Thomas Nowotny has a background in theoretical and mathematical physics, with a Diplom (MSc) in theoretical Physics at Georg-August Universität Göttingen and a PhD in theoretical Physics at Universität Leipzig. After his PhD, he worked at the Institute for Nonlinear Science at the University of California, San Diego where he conducted research in Computational Neuroscience and bio-inspired AI. In 2007, he moved to the University of Sussex as an RCUK Academic Fellow and rapidly climbed the ranks to Professor of Informatics in the School of Engineering and Informatics. He is the head of the AI research group and one of two directors of the “Sussex AI” Centre of Excellence. His research spans insect olfaction, artificial olfaction, insect navigation, insect-inspired machine learning models, hybrid brain-computer systems and neuromorphic computing. He is the creator of the research software STDPC for hybrid brain-computer experimentation and GeNN/mlGeNN for simulating spiking neural networks and performing event-based machine learning. His recent work is focused on developing event-based neural networks that run on neuromorphic accelerators to save orders of magnitude of energy in machine learning.
         </div>
       </div>
-      <div class="speaker-card">
-        <img src="images/chiaradeluca.jpeg" alt="Dr. Chiara De Luca">
-        <div class="card-content">
-          <h3>Dr. Chiara De Luca</h3>
-          <p>Senior Researcher at Digital Society Initiative, Zurich, Switzerland.</p>
-        </div>
+      <img src="images/tomas.jpeg" alt="Prof. Thomas Nowotny">
+      <div class="card-content">
+        <h3>Prof. Thomas Nowotny</h3>
+        <p>Professor of Informatics at University of Sussex, UK.</p>
       </div>
-      <div class="speaker-card">
-        <img src="images/arthuraubret.jpeg" alt="Dr. Arthur Aubret">
-        <div class="card-content">
-          <h3>Dr. Arthur Aubret</h3>
-          <p>Senior Researcher at Frankfurt Institute for Advanced Studies, Germany.</p>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <img src="images/lucaperes.jpeg" alt="Dr. Luca Peres">
-        <div class="card-content">
-          <h3>Dr. Luca Peres</h3>
-          <p>Lecturer specialized in neuromorphic computing at University of Manchester, UK.</p>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <img src="images/srikanth.jpeg" alt="srikanth">
-        <div class="card-content">
-          <h3>Dr. Srikanth Ramaswamy</h3>
-          <p>Academic Track Fellow, Newcastle University, UK.</p>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <img src="images/kasi.jpeg" alt="Kasia">
-        <div class="card-content">
-          <h3>Dr. Katarzyna (Kasia) Kożdoń - Innatera</h3>
-          <p>Strategic Business Development & Solutions Manager, Netherlands.</p>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <img src="images/thomas.jpeg" alt="Thomas">
-        <div class="card-content">
-          <h3>Dr. Thomas Ortner - IBM Zurich</h3>
-          <p>IBM neuroinspied AI</p>
-        </div>
-      </div>
+      <div class="hover-hint">Hover for bio</div>
     </div>
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Dr. Chiara De Luca</h4>
+        <div class="bio-text">
+          [Dr. Chiara De Luca's bio here]
+        </div>
+        <div class="bio-highlights">
+        </div>
+      </div>
+      <img src="images/chiaradeluca.jpeg" alt="Dr. Chiara De Luca">
+      <div class="card-content">
+        <h3>Dr. Chiara De Luca</h3>
+        <p>Senior Researcher at Digital Society Initiative, Zurich, Switzerland.</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+    </div>
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Dr. Arthur Aubret</h4>
+        <div class="bio-text">
+          Arthur Aubret is a postdoctoral researcher at the Frankfurt Institute for Advanced Studies. His research focuses on understanding the learning mechanisms that shape high-level visual representations in humans and machines, with a particular emphasis on developmental, bio-inspired, and self-supervised learning models.  He holds a Ph.D. in computer science from Université Claude Bernard Lyon 1, where he studied intrinsic motivation and hierarchical reinforcement learning. His recent work explores how principles from early human development, such as temporal continuity and active object exploration, can support the emergence of robust and semantic object representations.
+        </div>
+      </div>
+      <img src="images/arthuraubret.jpeg" alt="Dr. Arthur Aubret">
+      <div class="card-content">
+        <h3>Dr. Arthur Aubret</h3>
+        <p>Senior Researcher at Frankfurt Institute for Advanced Studies, Germany.</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+    </div>
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Dr. Luca Peres</h4>
+        <div class="bio-text">
+          [Dr. Luca Peres' bio here]
+        </div>
+      </div>
+      <img src="images/lucaperes.jpeg" alt="Dr. Luca Peres">
+      <div class="card-content">
+        <h3>Dr. Luca Peres</h3>
+        <p>Lecturer at University of Manchester, UK.</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+    </div>
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Dr. Srikanth Ramaswamy</h4>
+        <div class="bio-text">
+          [Dr. Srikanth Ramaswamy's bio here]
+        </div>
+      </div>
+      <img src="images/srikanth.jpeg" alt="srikanth">
+      <div class="card-content">
+        <h3>Dr. Srikanth Ramaswamy</h3>
+        <p>Academic Track Fellow, Newcastle University, UK.</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+    </div>
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Dr. Katarzyna (Kasia) Kożdoń - Innatera</h4>
+        <div class="bio-text">
+          Dr. Katarzyna (Kasia) Kożdoń is a Strategic Business Development and Solutions Manager at Innatera, where she connects user needs with engineering to bring neuromorphic processors into real-world edge AI applications. She holds a PhD in AI from University College London, specialising in spiking neural networks and evolutionary algorithms. Kasia is also an Honorary Lecturer at UCL and serves on the Programme Committee of the International Society for Artificial Life.
+        </div>
+      </div>
+      <img src="images/kasi.jpeg" alt="Kasia">
+      <div class="card-content">
+        <h3>Dr. Katarzyna (Kasia) Kożdoń - Innatera</h3>
+        <p>Strategic Business Development & Solutions Manager, Netherlands.</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+    </div>
+
+    <div class="speaker-card">
+      <div class="bio-tooltip">
+        <h4>Dr. Thomas Ortner</h4>
+        <div class="bio-text">
+          Thomas Ortner is a Research Scientist at IBM Research Europe (Switzerland) in the Emerging Computing and Circuits group. He holds a PhD in Computer Science and multiple MSc degrees from Graz University of Technology, Austria. His research centers on developing efficient, stateful models for sequence processing that go beyond transformer architectures, leveraging concepts from neuro-inspired AI. He also works on novel learning algorithms and their application to NLP, time series, and speech.
+        </div>
+      </div>
+      <img src="images/thomas.jpeg" alt="Thomas">
+      <div class="card-content">
+        <h3>Dr. Thomas Ortner - IBM Research</h3>
+        <p>Research Scientist at IBM Research Europe</p>
+      </div>
+      <div class="hover-hint">Hover for bio</div>
+    </div>
+
+  </div>
   </section>
 
   <section style="text-align: center;">
@@ -639,36 +876,62 @@
 </footer>
 
 <script>
+
+    // Auto-detect which speaker cards are in bottom rows and adjust tooltip positioning
+    function adjustTooltipPositioning() {
+    const speakerCards = document.querySelectorAll('.speaker-card');
+    const viewportHeight = window.innerHeight;
+
+    speakerCards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    const cardBottom = rect.bottom;
+
+    // If card is in bottom half of visible area, show tooltip above
+    if (cardBottom > viewportHeight * 0.6) {
+    card.classList.add('bottom-row');
+  } else {
+    card.classList.remove('bottom-row');
+  }
+  });
+  }
+
+    // Run on page load and resize
+    document.addEventListener('DOMContentLoaded', adjustTooltipPositioning);
+    window.addEventListener('resize', adjustTooltipPositioning);
+    window.addEventListener('scroll', adjustTooltipPositioning);
+
+
+
 // Function to escape HTML content
 function escapeHtml(text) {
-  const map = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;'
-  };
-  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+const map = {
+'&': '&amp;',
+'<': '&lt;',
+'>': '&gt;',
+'"': '&quot;',
+"'": '&#039;'
+};
+return text.replace(/[&<>"']/g, function(m) { return map[m]; });
 }
 
 // Function to strip HTML tags and keep only text
 function stripHtml(html) {
-  const tmp = document.createElement("DIV");
-  tmp.innerHTML = html;
-  return tmp.textContent || tmp.innerText || "";
+const tmp = document.createElement("DIV");
+tmp.innerHTML = html;
+return tmp.textContent || tmp.innerText || "";
 }
 
 // Function to fetch and display Zenodo abstracts
 async function loadZenodoAbstracts() {
-  try {
-    // Zenodo API endpoint for the NCDL 2025 community
-    const response = await fetch('https://zenodo.org/api/communities/ncdl-2025/records?sort=newest&size=20');
+try {
+// Zenodo API endpoint for the NCDL 2025 community
+const response = await fetch('https://zenodo.org/api/communities/ncdl-2025/records?sort=newest&size=20');
 
-    if (!response.ok) {
-      throw new Error('Failed to fetch data');
-    }
+if (!response.ok) {
+throw new Error('Failed to fetch data');
+}
 
-    const data = await response.json();
+const data = await response.json();
     const abstracts = data.hits.hits;
 
     const container = document.getElementById('abstracts-container');
