@@ -82,7 +82,7 @@ Traditional AI struggles with real-time adaptability, continual learning, and en
 | 10:00–10:30 | Keynote: Dr. Chiara De Luca (confirmed - in person) - Learning on the edge: local and online neuromorphic intelligence + Q&A                                                                            |
 | 10:30–11:00 | Coffee Break + Intro Poster Session                                                                                                      |
 | 11:00–11:30 | Keynote: Dr. Arthur Aubret (confirmed - in person) - Bio-inspired Self-Supervised Learning of Visual Object Representations + Q&A        |
-| 11:30–12:00 | Keynote: Dr. Luca Peres (confirmed - in person) - Neuromorphic Architectures HW/SW + Q&A                                                 |
+| 11:30–12:00 | Keynote: Dr. Luca Peres (confirmed - in person) - Events are all you need + Q&A                                                 |
 | 12:00–12:30 | Keynote: Prof. Srikanth Ramaswamy (confirmed - in person) - Interface of biological and artificial neural networks + Q&A                 |
 | 12:30–14:00 | Lunch                                                                                                                                    |
 | 14:00–14:30 | Panel Discussion or Debate: Interdisciplinary Approaches to Neuromorphic Systems                                                         |
