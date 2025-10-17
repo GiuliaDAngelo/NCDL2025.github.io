@@ -19,7 +19,7 @@
 ## 🧑‍🔬 Organizers
 
 - **Dr. Giulia D'Angelo** – Czech Technical University in Prague  
-- **Dr. Alexander Hadjiivanov** – Adapsent, Leiden, Netherlands  
+- **Dr. Alexander Hadjiivanov** – Netherlands eScience Center  
 - **Matthias Kampa** – Zurich University of Applied Sciences  
 - **Dr. James Knight** – University of Sussex  
 - **Prof. Yulia Sandamirskaya** – Zurich University of Applied Sciences  
